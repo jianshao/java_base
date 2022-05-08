@@ -1,0 +1,24 @@
+package com.jianshao.appointment_service.admin.$!{cfg.abc}.service;
+
+import CommonServiceImpl;
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.entity.${entity};
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.entity.${entity}Vo;
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.controller.${entity}Req;
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.mapper.${entity}Mapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+/**
+ * <p>
+ * $!{table.comment} 服务实现类
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Service
+public class ${table.serviceImplName} extends CommonServiceImpl<${entity}Req,${entity}Vo,${entity}> implements ${table.serviceName} {
+
+    @Autowired
+    private ${entity}Mapper ${table.entityPath}Mapper;
+}

@@ -1,0 +1,31 @@
+package com.jianshao.appointment_service.admin.$!{cfg.abc}.controller;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import PageCondition;
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.entity.${entity};
+#foreach($pkg in ${table.importPackages})
+import ${pkg};
+#end
+
+import lombok.Data;
+
+/**
+ * <p>
+ * $!{table.comment}
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Data
+public class ${entity}Req extends PageCondition<${entity}> {
+## ----------  BEGIN 字段循环遍历  ----------
+#foreach($field in ${table.fields})
+    private ${field.propertyType} ${field.propertyName};
+#end
+## ----------  END 字段循环遍历  ----------
+    public QueryWrapper<${entity}> buildQuery() {
+        QueryWrapper<${entity}> queryWrapper = new QueryWrapper<>();
+        return queryWrapper;
+    }
+}

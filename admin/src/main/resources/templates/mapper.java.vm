@@ -1,0 +1,19 @@
+package com.jianshao.appointment_service.admin.$!{cfg.abc}.mapper;
+
+import CommonMapper;
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.entity.${entity};
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * <p>
+ * $!{table.comment} Mapper 接口
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Mapper
+public interface ${table.mapperName} extends CommonMapper<${entity}> {
+
+}
+

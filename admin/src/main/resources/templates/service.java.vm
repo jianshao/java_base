@@ -1,0 +1,18 @@
+package com.jianshao.appointment_service.admin.$!{cfg.abc}.service;
+
+import CommonService;
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.entity.${entity};
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.entity.${entity}Vo;
+import com.jianshao.appointment_service.admin.$!{cfg.abc}.controller.${entity}Req;
+
+/**
+ * <p>
+ * $!{table.comment} 服务类
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+public interface ${table.serviceName}  extends CommonService<${entity}Req,${entity}Vo,${entity}> {
+
+}
