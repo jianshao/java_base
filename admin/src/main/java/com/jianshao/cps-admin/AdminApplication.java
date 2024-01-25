@@ -14,7 +14,7 @@ import java.net.UnknownHostException;
 
 @Slf4j
 @SpringBootApplication
-@MapperScan("com.jianshao.appointment_service.admin.*.mapper")
+@MapperScan("com.jianshao.cps-admin.*.mapper")
 public class AdminApplication {
 
     @Value("${server.servlet.context-path:}")
